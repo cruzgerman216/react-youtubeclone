@@ -1,0 +1,76 @@
+.sidebarrow:hover{
+    background-color:#e5e5e5;
+    cursor:pointer;
+}
+
+.hidesidebar{
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: -18%;
+    overflow-x: hidden;
+    transition: left .3s linear;
+    background-color: white;
+    padding: 1.5% 0px 0px 3.5%;
+}
+.showsidebar{
+    height: 100%;
+    width: 18%;
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    left: 0px;
+    overflow-x: hidden;
+    transition: left .3s linear;
+    background-color: white;
+    padding: 1.5% 0px 0px 3.5%;
+}
+
+.overlay {
+    position: fixed;
+    width: 100%; 
+    height: 100%; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 100; 
+    cursor: pointer; 
+    transition-duration: 1s;
+  }
+  
+  .hideoverlay{
+    transition: 1s;
+  }
+
+  .profilenav{
+    width: 100%;
+    background-color: rgb(249, 249, 249);
+    position: absolute;
+    top: 20%;
+    z-index: 1;
+    height:100%;
+  }
+
+  .slider {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    overflow-x: hidden;
+  }
+  .slide {
+    width: 20%;
+    flex-shrink: 0;
+    height: 100%;
+    position: relative;
+    left: 0px;
+    transition: 1s;
+  }
+
+  #thumbnailflex{
+    flex: 0, 0, 20%;
+    max-width: 20%
+  }

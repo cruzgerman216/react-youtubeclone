@@ -1,0 +1,28 @@
+#videocontent{
+    margin: 6% 1% 0% 1%;
+}
+
+.video{
+    width: 100%;
+    height: 75vh;
+}
+
+.title{
+    font-size: 150%;
+}
+
+.rowheader{
+    margin:0;
+}
+.column{
+    padding: 0px;
+}
+
+.border{
+    border-top: 1px solid #bbb;
+    margin: 2% 0% 2% 0%;
+}
+
+.columnbottomspace{
+    margin-bottom: 2%;
+}
