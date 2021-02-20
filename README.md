@@ -1,5 +1,5 @@
 # React Youtube Clone
-A Youtube Clone made in React/Redux connected to it's <a href="https://github.com/cruzgerman216/youtubeclone-api">backend API</a>. This project utitlizes standard ES6, authentication and standard react practices.
+A Youtube Clone made in React/Redux this is connected to a <a href="https://github.com/cruzgerman216/youtubeclone-api">backend API</a>. Just like the popular video platform <a href="Youtube.com" target="_blank">Youtube.com</a>, this project is a video platform that has features such as uploading videos through video embeded urls, liking comments, adding comments and created a personalzied channel to their liking. This project utitlizes standard ES6, authentication and standard react practices such as container components, presentational components, and more.
 
 For a video demonstration, please visit 
 
