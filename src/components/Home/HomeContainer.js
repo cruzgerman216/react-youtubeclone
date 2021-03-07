@@ -8,6 +8,7 @@ import VideoList from "./VideoList"
 import API from "../../utils/API"
 import '../../styles/home.css'
 import "../../styles/utilities.css"
+
 class Home extends React.Component {
     componentDidMount() {
         window.addEventListener('scroll',this.loadMore)
@@ -50,7 +51,7 @@ class Home extends React.Component {
                         </Col>
                         <Col sm={11} style={this.props.toggleNavbar ? {marginLeft:"120px",marginTop:"20px" }: {marginLeft: "250px"}} >
                             <Row>
-                                {this.state.videos.length == 0 ? <div class="loader"></div> : <VideoList videos={this.state.videos}/>}
+                                {this.state.videos.length === 0 ? <div class="loader"></div> : <VideoList videos={this.state.videos}/>}
                             </Row>
                         </Col>
                     </Row>

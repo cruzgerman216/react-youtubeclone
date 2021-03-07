@@ -6,6 +6,8 @@ export const signup = (user,history) => {
         .then(data =>{
             dispatch({type:'AUTH_SUCCESSFUL', payload:{loggedIn: data.logged_in, currentUser: data.user}})
             history.push('/');
+        }).catch(error=>{
+            history.push("/error")
         })
     }
 }
@@ -16,6 +18,8 @@ export const login = (user,history) => {
         .then(data =>{
             dispatch({type:'AUTH_SUCCESSFUL', payload:{loggedIn: data.logged_in, currentUser: data.user}});
             history.push('/');
+        }).catch(error=>{
+            history.push("/error")
         })
     }
 }
