@@ -29,6 +29,8 @@ export const checkLoggedIn = () => {
         API.checkLoginStatus()
         .then(data =>{
             dispatch({type:'AUTH_SUCCESSFUL', payload:{loggedIn: data.logged_in, currentUser: data.user}});
+        }).catch(error => {
+            dispatch({type:"CONNECTION", connection:false})
         })
     }
 }
